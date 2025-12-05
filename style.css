@@ -1,5 +1,3 @@
-@layer reset, base, layout, components;
-
 @layer reset {
   *,
   *::before,
@@ -145,10 +143,7 @@
     --border-radius-2: 0.5rem;
     --border-radius-3: 0.75rem;
   }
-}
-
-
-html {
+  html {
   font-family: var(--ff-body);
   line-height: 1.6;
 }
@@ -179,7 +174,20 @@ a:hover,
 a:focus-visible {
   color: red;
 }
+}
 
+@layer layout {
+  .wrapper{
+    max-width: 1130px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    box-sizing: content-box;
+  }
+
+  .wrapper-wide{
+    
+  }
+}
 
 @layer utilities {
   .visually-hidden {
